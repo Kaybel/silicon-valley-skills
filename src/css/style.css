@@ -6,6 +6,7 @@
 #modalAdd{
   background-color: inherit;
   border: none;
+  font-size: 150%;  
 }
 
 .modal-header{
@@ -21,5 +22,12 @@
 .card-title{
   display: inline;
   margin-left: 5%;
-  width: 20%;
+}
+
+#skillsDelete{
+  background-color: rgb(99, 99, 99);
+  border: none;
+  color: white;
+  height: 4%;
+  font-size: 150%;
 }

@@ -25,10 +25,7 @@ db.collection("skillAdd").onSnapshot((querySnapshot) => {
   querySnapshot.forEach((doc) => {
     skillWall.innerHTML += `
           
-          
-          <button type="button" class="btn btn-primary">
-          ${doc.data().skill}  <i class="fas fa-times" onclick="myFunction(event, '${doc.id}')"></i>
-</button>`
+    <span  id="skillsDelete" class="badge badge-secondary">${doc.data().skill} <i class="fas fa-times" onclick="myFunction(event, '${doc.id}')"></i></span>`
   });
 });
 
@@ -42,9 +39,9 @@ function eliminar(id) {
 }
 
 function myFunction(event, id) {
-  if (confirm("estas seguro??")) {
+  if (confirm("Are you sure?")) {
     eliminar(id);
   } else {
-    console.log('no eliminó el mensaje!');
+    console.log('no se eliminó el mensaje!');
   }
 }
