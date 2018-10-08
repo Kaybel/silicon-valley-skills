@@ -1,0 +1,25 @@
+#skillWall{
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+#modalAdd{
+  background-color: inherit;
+  border: none;
+}
+
+.modal-header{
+  background-color: rgb(228, 110, 110);
+}
+.card-body{
+  border: solid gray;
+}
+#user{
+  width: 10%;
+  height: 10%;
+}
+.card-title{
+  display: inline;
+  margin-left: 5%;
+  width: 20%;
+}
