@@ -1,0 +1,34 @@
+{
+  "name": "skills",
+  "version": "1.0.0",
+  "description": "proyecto silicon valley de skills (agregar y borrar skills)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaybel/silicon-valley-skills.git"
+  },
+  "keywords": [
+    "silicon",
+    "valley",
+    "jest",
+    "skills",
+    "skill",
+    "laboratoria"
+  ],
+  "author": "alejandra kaybel martinez gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaybel/silicon-valley-skills/issues"
+  },
+  "homepage": "https://github.com/Kaybel/silicon-valley-skills#readme",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0"
+  }
+}
