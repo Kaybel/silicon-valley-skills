@@ -24,8 +24,34 @@ db.collection("skillAdd").onSnapshot((querySnapshot) => {
   skillWall.innerHTML = '';
   querySnapshot.forEach((doc) => {
     skillWall.innerHTML += `
-          
-    <span  id="skillsDelete" class="badge badge-secondary">${doc.data().skill} <i class="fas fa-times" onclick="myFunction(event, '${doc.id}')"></i></span>`
+
+<button type="button" data-toggle="modal" data-target="#deleteModal">
+${doc.data().skill} 
+<i class="fas fa-times"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Remove this skill</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Once deleted, a  skill cannot be recovered from the trash.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="eliminar('${doc.id}')" data-dismiss="modal">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    `
   });
 });
 
