@@ -39,7 +39,7 @@ function eliminar(id) {
 }
 
 function myFunction(event, id) {
-  if (confirm("Are you sure?")) {
+  if (confirm("Once deleted, a  skill cannot be recovered from the trash.")) {
     eliminar(id);
   } else {
     console.log('no se eliminó el mensaje!');

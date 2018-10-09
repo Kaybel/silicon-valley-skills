@@ -12,37 +12,49 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Students</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Teachers</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Students</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teachers</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+<br>
+<h1>Student Data</h1>
+<br>
   <div class="card-body">
-    <div >
-    <h3> <u>skills</u></h3>
-    <br>
-  </div>
-      <div id="skillWall"></div> <br>
+    <div id="first">
+      <img src="assets/img/git.jpg" id="user" alt="" srcset="">
+      <h3 id="userName">Alejandra K <br> Martínez G</h3>
+    </div>
+
+    <div id="second">
+      <div>
+        <h3>
+          <u>skills</u>
+        </h3>
+      </div>
+      <div id="skillWall"></div>
+      <br>
       <!-- Button trigger modal add skills -->
       <button type="button" data-toggle="modal" data-target="#exampleModal" id="modalAdd">
         <i class="fas fa-plus"></i> Add
@@ -52,23 +64,24 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Add new skill</h5>
+              <h2 class="modal-title" id="exampleModalLabel">Add new skill</h2>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              Separate multiplate skill with commas.
+              Separate multiplate skills with commas.
               <hr>
               <input type="text" id="skill">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="guardar()" data-dismiss="modal">Add</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel">Close</button>
+              <button type="button" class="btn btn-primary" onclick="guardar()" data-dismiss="modal" id="add">Add</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </div>
   <section id=" links ">
     <!-- links de bootstrap -->
