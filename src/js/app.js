@@ -25,10 +25,10 @@ db.collection("skillAdd").onSnapshot((querySnapshot) => {
   querySnapshot.forEach((doc) => {
     skillWall.innerHTML += `
 
-<button type="button" data-toggle="modal" data-target="#deleteModal">
+<span class="badge badge-secondary" data-toggle="modal" data-target="#deleteModal">
 ${doc.data().skill} 
 <i class="fas fa-times"></i>
-</button>
+</span>
 
 <!-- Modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
